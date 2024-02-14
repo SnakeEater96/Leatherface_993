@@ -1,5 +1,5 @@
-# LightFulLife Socialpage[
-https://lightfullife.snakeeater96.com/
+# Letherface Socialpage
+https://leatherface.snakeeater96.com/
 
 The use of the code provided here is free, since this code is just a change from the original code provided by LittleLink.
 https://littlelink.io
