@@ -1,4 +1,4 @@
-t<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
@@ -12,151 +12,63 @@ t<!DOCTYPE html>
     body {
       font-family: Arial, sans-serif;
       background-color: #3B271A; /* Dunkler bräunlicher Hintergrund */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  
+      color: #f4f4f4;
+      margin: 0;
+      padding: 0;
       display: flex;
-      align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      margin: 50px auto 0 auto;
-      transition: background-color 0.3s, color 0.3s;
-      }
-    /* Container Styles */
+      align-items: center;
+      height: 100vh;
+    }
     .container {
-      width: 100%;
-      max-width: 500px;
-      padding: 30px 20px;
-      background-color: rgba(255, 255, 255, 0.3); /* Transparenter weißer Hintergrund */
-      border-radius: 10px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
-      text-align: center;
-      transition: background-color 0.3s, box-shadow 0.3s; /* Sanfte Übergänge */
+      max-width: 960px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* Leicht transparenter Hintergrund */
+      border-radius: 15px;
+      border: 2px solid rgba(255, 255, 255, 0.6); /* Transparenter Rahmen */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Schatten für den Container */
     }
-
-    /* Button Styling */
-    .website-button {
-        text-decoration: none;
-        /* Entfernt die Unterstreichung vom Link */
-    }
-    
-    .website-button button {
-        background-color: ##CA9B33;
-        /* Hintergrundfarbe */
-        color: #fff;
-        /* Textfarbe */
-        font-size: 18px;
-        /* Schriftgröße */
-        padding: 15px 30px;
-        /* Innenabstände */
-        margin: 20px auto;
-        border: none;
-        /* Keine Standard-Randlinie */
-        border-radius: 8px;
-        /* Abgerundete Ecken */
-        cursor: pointer;
-        /* Zeigt einen Zeiger an, wenn man darüber fährt */
-        transition: background-color 0.3s, transform 0.3s;
-        /* Sanfte Übergänge für Hover-Effekte */
-    }
-    
-    .website-button button:hover {
-        -color: ##453022;;
-        /* Dubackgroundnklere Farbe bei Hover */
-        transform: scale(1.05);
-        /* Vergrößert den Button leicht */
-    }
-    
-    .website-button button:active {
-        transform: scale(0.98);
-        /* Kleinerer Effekt bei Klick */
-    }
-
-
     .header {
       text-align: center;
       margin-bottom: 30px;
     }
-
     .header img {
       max-width: 150px;
       border-radius: 50%;
     }
-
     .header h1 {
       font-size: 2rem;
       margin-top: 10px;
       color: #333;
     }
-    
-    /* Links als Buttons */
-    .links-section {
-        margin-top: 20px;
-        text-align: center;
+    .link-box {
+      background-color: rgba(240, 240, 240, 0.8); /* Heller, leicht transparenter Kasten */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dezenter Schatten */
+      margin-bottom: 40px;
     }
-    
-    .links-section h2 {
-        font-size: var(--font-size-small);
-        color: var(--text-color-dark);
-        margin-bottom: 20px;
-        padding-bottom: 10px;
+    .links a {
+      display: block;
+      padding: 10px;
+      margin: 10px 0;
+      text-align: center;
+      color: #fff;
+      background-color: #1DA1F2;
+      border-radius: 5px;
+      text-decoration: none;
     }
-    
-    .center {
-        background-color: #6418ac;
-        font-weight: 600;
-        line-height: 2em;
-        padding: 40px;
+    .links a:hover {
+      background-color: #0d8cdc;
     }
-    
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 20px auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .impressum {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #555;
     }
-    
-    ul li {
-        margin-bottom: 15px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    ul .btn {
-        width: 90%;
-        text-align: center;
-        background-color: transparent;
-        border: none;
-        
-    }
-    
-    ul .sp.btn a {
-        font-weight: 700;
-        background-color: #da0a94 !important;
-    }
-    
-    ul .btn a {
-        display: inline-block;
-        padding: 12px 12px;
-        color: #fff;
-        font-size: var(--font-size-small);
-        text-decoration: none;
-        background-color: var(--button-background-light);
-        border-radius: 8px;
-        margin: 0 auto;
-        transition: background-color 0.3s, transform 0.3s;
-        width: 100%;
-        /* Füllt den Button aus */
-        text-align: center;
-    }
-    
-    ul .btn a:hover {
-        background-color: var(--button-hover-light);
-        transform: scale(1.05);
+    .impressum p {
+      margin: 5px 0;
     }
     @media (max-width: 768px) {
       .header h1 {
@@ -168,32 +80,28 @@ t<!DOCTYPE html>
 
 <body>
   <div class="container">
+    <div class="header">
+      <img src="images/Leatherface.jpg" alt="Profilbild von Leatherface_993">
+      <h1>Leatherface_993</h1>
+    </div>
 
-    <div class="profile">
-      <div class="header">
-        <img src="images/Leatherface.jpg" alt="Profilbild von Leatherface_993">
-        <h1>Leatherface_993</h1>
-      </div>
-  
-      <div class="links-section">
-        <div class="links">
-          <li class="btn"><a href="https://www.tiktok.com/@hab_ich_vergessen_93?_t=8jpxZPoAEWu&_r=1" target="_blank">hab_ich_vergessen_93</a></li>
-          <li class="btn"><a href="https://vm.tiktok.com/ZGekGh8Ls/" target="_blank">marcelbm</a></li>
-          <li class="btn"><a href="https://www.tiktok.com/@steve_222?_t=8jhyDSn8e81" target="_blank">steve_222</a></li>
-          <li class="btn"><a href="https://www.tiktok.com/@felixflexi252?is_from_webapp=1&sender_device=pc" target="_blank">felixflexi252</a></li>
-        </div>
-      </div>
-  
-      <div class="impressum">
-        <h2>Impressum</h2>
-        <p>Torben Seehusen</p>
-        <p>c/o LEADERLY UG (haftungsbeschränkt)</p>
-        <p>Carl-Zeiss-Str. 4</p>
-        <p>14727 Premnitz OT Mögelin</p>
+    <div class="link-box">
+      <div class="links">
+        <a href="https://www.tiktok.com/@hab_ich_vergessen_93?_t=8jpxZPoAEWu&_r=1" target="_blank">hab_ich_vergessen_93</a>
+        <a href="https://vm.tiktok.com/ZGekGh8Ls/" target="_blank">marcelbm</a>
+        <a href="https://www.tiktok.com/@steve_222?_t=8jhyDSn8e81" target="_blank">steve_222</a>
+        <a href="https://www.tiktok.com/@felixflexi252?is_from_webapp=1&sender_device=pc" target="_blank">felixflexi252</a>
       </div>
     </div>
-</div>
 
+    <div class="impressum">
+      <h2>Impressum</h2>
+      <p>Torben Seehusen</p>
+      <p>c/o LEADERLY UG (haftungsbeschränkt)</p>
+      <p>Carl-Zeiss-Str. 4</p>
+      <p>14727 Premnitz OT Mögelin</p>
+    </div>
+  </div>
 </body>
 
 </html>
