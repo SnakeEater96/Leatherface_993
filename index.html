@@ -35,10 +35,44 @@ t<!DOCTYPE html>
       transition: background-color 0.3s, box-shadow 0.3s; /* Sanfte Übergänge */
     }
 
-    .container:hover {
-      background-color: rgba(255, 255, 255, 0.5); /* Stärkere Deckkraft bei Hover */
-      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Intensiverer Schatten */
+    /* Button Styling */
+    .website-button {
+        text-decoration: none;
+        /* Entfernt die Unterstreichung vom Link */
     }
+    
+    .website-button button {
+        background-color: ##CA9B33;
+        /* Hintergrundfarbe */
+        color: #fff;
+        /* Textfarbe */
+        font-size: 18px;
+        /* Schriftgröße */
+        padding: 15px 30px;
+        /* Innenabstände */
+        margin: 20px auto;
+        border: none;
+        /* Keine Standard-Randlinie */
+        border-radius: 8px;
+        /* Abgerundete Ecken */
+        cursor: pointer;
+        /* Zeigt einen Zeiger an, wenn man darüber fährt */
+        transition: background-color 0.3s, transform 0.3s;
+        /* Sanfte Übergänge für Hover-Effekte */
+    }
+    
+    .website-button button:hover {
+        -color: ##453022;;
+        /* Dubackgroundnklere Farbe bei Hover */
+        transform: scale(1.05);
+        /* Vergrößert den Button leicht */
+    }
+    
+    .website-button button:active {
+        transform: scale(0.98);
+        /* Kleinerer Effekt bei Klick */
+    }
+
 
     .header {
       text-align: center;
@@ -55,40 +89,13 @@ t<!DOCTYPE html>
       margin-top: 10px;
       color: #333;
     }
-
-    .link-box {
-      background-color: rgba(240, 240, 240, 0.8); /* Heller, leicht transparenter Kasten */
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dezenter Schatten */
-      margin-bottom: 40px;
+    
+    /* Links als Buttons */
+    .links-section {
+        margin-top: 20px;
+        text-align: center;
     }
 
-    .links a {
-      display: block;
-      padding: 10px;
-      margin: 10px 0;
-      text-align: center;
-      color: #fff;
-      background-color: #1DA1F2;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .links a:hover {
-      background-color: #0d8cdc;
-    }
-
-    .impressum {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      text-align: center;
-      color: #555;
-    }
-
-    .impressum p {
-      margin: 5px 0;
-    }
 
     @media (max-width: 768px) {
       .header h1 {
