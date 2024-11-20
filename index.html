@@ -20,27 +20,40 @@
       align-items: center;
       height: 100vh;
     }
+
+    /* Container Styles */
     .container {
-      max-width: 960px;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9); /* Leicht transparenter Hintergrund */
-      border-radius: 15px;
-      border: 2px solid rgba(255, 255, 255, 0.6); /* Transparenter Rahmen */
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Schatten für den Container */
+      width: 100%;
+      max-width: 500px;
+      padding: 30px 20px;
+      background-color: rgba(255, 255, 255, 0.3); /* Transparenter weißer Hintergrund */
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+      text-align: center;
+      transition: background-color 0.3s, box-shadow 0.3s; /* Sanfte Übergänge */
     }
+
+    .container:hover {
+      background-color: rgba(255, 255, 255, 0.5); /* Stärkere Deckkraft bei Hover */
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Intensiverer Schatten */
+    }
+
     .header {
       text-align: center;
       margin-bottom: 30px;
     }
+
     .header img {
       max-width: 150px;
       border-radius: 50%;
     }
+
     .header h1 {
       font-size: 2rem;
       margin-top: 10px;
       color: #333;
     }
+
     .link-box {
       background-color: rgba(240, 240, 240, 0.8); /* Heller, leicht transparenter Kasten */
       padding: 20px;
@@ -48,6 +61,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dezenter Schatten */
       margin-bottom: 40px;
     }
+
     .links a {
       display: block;
       padding: 10px;
@@ -58,18 +72,22 @@
       border-radius: 5px;
       text-decoration: none;
     }
+
     .links a:hover {
       background-color: #0d8cdc;
     }
+
     .impressum {
       margin-top: 40px;
       font-size: 0.9rem;
       text-align: center;
       color: #555;
     }
+
     .impressum p {
       margin: 5px 0;
     }
+
     @media (max-width: 768px) {
       .header h1 {
         font-size: 1.5rem;
@@ -80,30 +98,27 @@
 
 <body>
   <div class="container">
-  
-    <div class="profile">
-        <div class="header">
-          <img src="images/Leatherface.jpg" alt="Profilbild von Leatherface_993">
-          <h1>Leatherface_993</h1>
-        </div>
-    
-        <div class="link-section">
-          <div class="links">
-            <a href="https://www.tiktok.com/@hab_ich_vergessen_93?_t=8jpxZPoAEWu&_r=1" target="_blank">hab_ich_vergessen_93</a>
-            <a href="https://vm.tiktok.com/ZGekGh8Ls/" target="_blank">marcelbm</a>
-            <a href="https://www.tiktok.com/@steve_222?_t=8jhyDSn8e81" target="_blank">steve_222</a>
-            <a href="https://www.tiktok.com/@felixflexi252?is_from_webapp=1&sender_device=pc" target="_blank">felixflexi252</a>
-          </div>
-        </div>
-  
-      <div class="impressum">
-        <h2>Impressum</h2>
-        <p>Torben Seehusen</p>
-        <p>c/o LEADERLY UG (haftungsbeschränkt)</p>
-        <p>Carl-Zeiss-Str. 4</p>
-        <p>14727 Premnitz OT Mögelin</p>
-  </div>
+    <div class="header">
+      <img src="images/Leatherface.jpg" alt="Profilbild von Leatherface_993">
+      <h1>Leatherface_993</h1>
+    </div>
+
+    <div class="link-box">
+      <div class="links">
+        <a href="https://www.tiktok.com/@hab_ich_vergessen_93?_t=8jpxZPoAEWu&_r=1" target="_blank">hab_ich_vergessen_93</a>
+        <a href="https://vm.tiktok.com/ZGekGh8Ls/" target="_blank">marcelbm</a>
+        <a href="https://www.tiktok.com/@steve_222?_t=8jhyDSn8e81" target="_blank">steve_222</a>
+        <a href="https://www.tiktok.com/@felixflexi252?is_from_webapp=1&sender_device=pc" target="_blank">felixflexi252</a>
       </div>
+    </div>
+
+    <div class="impressum">
+      <h2>Impressum</h2>
+      <p>Torben Seehusen</p>
+      <p>c/o LEADERLY UG (haftungsbeschränkt)</p>
+      <p>Carl-Zeiss-Str. 4</p>
+      <p>14727 Premnitz OT Mögelin</p>
+    </div>
   </div>
 </body>
 
